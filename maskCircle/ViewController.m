@@ -22,7 +22,12 @@
 }
 - (void)viewWillAppear:(BOOL)animated
 {
-    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(spinit:) userInfo:nil repeats:YES];
+//    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(spinit:) userInfo:nil repeats:YES];
+//    [maskCircleView setProgress:1.0 animated:YES];
+}
+- (void)viewDidAppear:(BOOL)animated
+{
+    [maskCircleView setProgress:1.0 animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -40,4 +45,9 @@
     [maskCircleView setProgress:prog animated:YES];
 }
 
+- (IBAction)onSlideTounup:(UISlider *)sender {
+    [maskCircleView setProgress:sender.value animated:YES];
+}
+- (IBAction)onSliderChange:(UISlider*)slider {
+}
 @end

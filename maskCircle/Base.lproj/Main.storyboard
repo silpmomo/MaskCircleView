@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmc-Pd-kcq" customClass="MaskCircleView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmc-Pd-kcq" customClass="MaskCircleView">
                                 <rect key="frame" x="230" y="234" width="140" height="130"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -25,11 +25,23 @@
                                     <constraint firstAttribute="width" constant="140" id="gy0-vu-b44"/>
                                 </constraints>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="675-WH-T8E">
+                                <rect key="frame" x="154" y="401" width="293" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Xcz-tn-giR"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="onSlideTounup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cbh-OZ-j5l"/>
+                                    <action selector="onSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="OQ5-2I-3lL"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gmc-Pd-kcq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6ee-6p-s47"/>
-                            <constraint firstItem="gmc-Pd-kcq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="214" id="o3N-Nl-pbG"/>
+                            <constraint firstItem="675-WH-T8E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MUn-TN-tXc"/>
+                            <constraint firstItem="gmc-Pd-kcq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Mif-G7-HiP"/>
+                            <constraint firstItem="675-WH-T8E" firstAttribute="top" secondItem="gmc-Pd-kcq" secondAttribute="bottom" constant="37" id="Pgr-TR-Tyk"/>
                         </constraints>
                     </view>
                     <connections>
@@ -38,6 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="485" y="467"/>
         </scene>
     </scenes>
 </document>

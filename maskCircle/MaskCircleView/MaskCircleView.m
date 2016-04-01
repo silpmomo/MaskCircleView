@@ -93,6 +93,8 @@
     
     // Draw the lines.
     [aPath addLineToPoint:CGPointMake(bounds.size.width/2, 0)];
+    //사등분씩 가장 위쪽 기준으로 3pi/2 -> 0 or 2pi -> pi/2 -> pi
+    //원형 프로그래스바를 그리기 위해선 0일때 가장 최상단부터 시작해야 하므로 -m_pi_2부터 시작해야함.
     [aPath addArcWithCenter:CGPointMake(bounds.size.width/2, bounds.size.height/2) radius:[self radius] startAngle:-M_PI_2 endAngle:M_PI*2*_progress-M_PI_2 clockwise:YES];
     [aPath closePath];
     self.maskLayer.path = aPath.CGPath;
@@ -104,13 +106,14 @@
 }
 - (float)radius
 {
-    CGRect r = [self bounds];
-    float w = r.size.width;
-    float h = r.size.height;
-    if(w > h)
-        return h / 2.0;
+    CGRect rect = [self bounds];
     
-    return w / 2.0;
+    float width = rect.size.width;
+    float height = rect.size.height;
+    
+    if(width > height)
+        return height / 2.0;
+    return width / 2.0;
 }
 - (void)layoutSubviews
 {
