@@ -1,2 +1,2 @@
 # MaskCircleView
-image mask Circle
+image mask Circle Progress Bar
