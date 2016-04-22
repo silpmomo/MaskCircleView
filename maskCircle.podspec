@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = '1.0'
   s.summary      = 'image mask Circle Progress Bar'
   s.homepage     = 'https://github.com/silpmomo/MaskCircleView'
-  s.license      = 'MIT'
+  s.license      = { :type => 'MIT', :file => 'LICENSE' } 
   s.author       = { 'silpmomo' => 'silpmomo@divecat.me' }
   s.source       = { :git => 'https://github.com/silpmomo/MaskCircleView.git', :tag => s.version }
 
