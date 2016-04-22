@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "MaskCircleView.h"
+#import "GraphView.h"
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet MaskCircleView *maskCircleView;
+@property (weak, nonatomic) IBOutlet GraphView *graphView;
 
 @end
 

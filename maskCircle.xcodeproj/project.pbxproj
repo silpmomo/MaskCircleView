@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E350C3511CB24978009CB958 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = E350C3501CB24978009CB958 /* GraphView.m */; };
 		E3A6ABDE1CAE408D00C63D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A6ABDD1CAE408D00C63D24 /* main.m */; };
 		E3A6ABE11CAE408D00C63D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A6ABE01CAE408D00C63D24 /* AppDelegate.m */; };
 		E3A6ABE41CAE408D00C63D24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A6ABE31CAE408D00C63D24 /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E350C34F1CB24978009CB958 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		E350C3501CB24978009CB958 /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
 		E3A6ABD91CAE408D00C63D24 /* maskCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maskCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A6ABDD1CAE408D00C63D24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E3A6ABDF1CAE408D00C63D24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 			children = (
 				E3A6AC101CAE40D100C63D24 /* MaskCircleView.h */,
 				E3A6AC111CAE40D100C63D24 /* MaskCircleView.m */,
+				E350C34F1CB24978009CB958 /* GraphView.h */,
+				E350C3501CB24978009CB958 /* GraphView.m */,
 			);
 			path = MaskCircleView;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3A6AC121CAE40D100C63D24 /* MaskCircleView.m in Sources */,
+				E350C3511CB24978009CB958 /* GraphView.m in Sources */,
 				E3A6ABE41CAE408D00C63D24 /* ViewController.m in Sources */,
 				E3A6ABE11CAE408D00C63D24 /* AppDelegate.m in Sources */,
 				E3A6ABDE1CAE408D00C63D24 /* main.m in Sources */,
@@ -518,6 +524,7 @@
 				E3A6AC081CAE408D00C63D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3A6AC091CAE408D00C63D24 /* Build configuration list for PBXNativeTarget "maskCircleTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +533,7 @@
 				E3A6AC0B1CAE408D00C63D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3A6AC0C1CAE408D00C63D24 /* Build configuration list for PBXNativeTarget "maskCircleUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +542,7 @@
 				E3A6AC0E1CAE408D00C63D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
